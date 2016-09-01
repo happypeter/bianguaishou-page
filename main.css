@@ -1,4 +1,41 @@
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
+}
+
+.sidebar {
+  padding: 20px;
+  width: 20%;
+  height: 300px;
+  font-size: 30px;
+  color: white;
   background-color: goldenrod;
+  float: left;
+}
+
+.content {
+  padding: 20px;
+  width: 80%;
+  height: 300px;
+  font-size: 30px;
+  color: white;
+  background-color: teal;
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.container {
+  width: 960px;
+  background-color: deeppink;
+  margin: 0 auto;
+}
+
+.footer {
+  background-color: #bada55;
+  padding: 20px;
 }
