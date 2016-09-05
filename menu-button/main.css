@@ -45,7 +45,7 @@ body {
 
 
 .toggle-icon:before {
-    transform-origin: top left;
+      transform-origin: top left;
 }
 
 .nav-open .toggle-icon:before {
