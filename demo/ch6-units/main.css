@@ -1,0 +1,17 @@
+html {
+
+}
+body {
+  margin: 0;
+}
+.box {
+  background-color: goldenrod;
+  height: 400px;
+  width: 50%;
+}
+.child {
+  background-color: deeppink;
+  font-size: 24px;
+  height: 10rem;
+  width: 50%;
+}
