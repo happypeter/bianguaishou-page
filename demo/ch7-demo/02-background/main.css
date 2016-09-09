@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+}
+
+.banner-img {
+  background-image: url(./img/768-banner.jpg);
+  height: 100vw;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
