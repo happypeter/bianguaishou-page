@@ -39,6 +39,10 @@ body {
   position: absolute;
   font-family: "UniversLTStd", Arial, sans-serif;
   top: 90px;
+  left: 20px;
+  right: 20px;
+  width: auto;
+  color: #2d2d2d;
 }
 
 .banner small {
@@ -47,6 +51,7 @@ body {
   font-size: 24px;
   line-height: 0.9;
   padding: 5px;
+  display: inline-block;
 }
 
 .banner p {
@@ -59,6 +64,8 @@ body {
   font-size: 72px;
   margin: 25px 0;
   line-height: 65px;
+  position: relative;
+  padding-bottom: 25px;
 }
 
 .banner p.title:after {
@@ -66,4 +73,9 @@ body {
   width: 95px;
   height: 1px;
   content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -47px;
 }
