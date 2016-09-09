@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+}
+
+
+/* banner */
+
+.banner {
+  position: relative;
+}
+
+.banner:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 380px;
+  background-color: #dceefc;
+}
+
+.banner-img {
+  margin: 380px 0 0;
+  background-image: url(./img/768-banner.jpg);
+  height: 100vw;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
