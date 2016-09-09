@@ -4,15 +4,23 @@ body {
 
 
 /* banner */
+.banner {
+  position: relative;
+  overflow: hidden; /* fix margin-collapse */
+}
 
 .banner:before {
   content: "";
-  display: block;
-  height: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 381px;
   background-color: #dceefc;
 }
 
 .banner-img {
+  margin-top: 380px;
   background-image: url(./img/768-banner.jpg);
   height: 100vw;
   background-size: 100%;
