@@ -1,13 +1,35 @@
+/* common */
+
 body {
   margin: 0;
 }
 
+h1 {
+  font-family: "UniversLTStd", Arial, sans-serif;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: uppercase;
+  margin: 0;
+  color: #043f8b;
+}
+
+p {
+  margin: 30px auto;
+  line-height: 28px;
+}
 
 @font-face {
   font-family: "UniversLTStd";
   font-style: normal;
   font-weight: 300;
   src: url(./fonts/UniversLTStd-UltraCn.woff) format("woff")
+}
+
+@font-face {
+  font-family: "OfficinaSansStd";
+  font-style: normal;
+  font-weight: 300;
+  src: url(./fonts/OfficinaSansStd-Book.woff) format("woff")
 }
 
 /* banner */
@@ -91,4 +113,61 @@ body {
   bottom: 0;
   left: 50%;
   margin-left: -47px;
+}
+
+
+/* header */
+
+.header {
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 70px 20px 90px;
+}
+
+.header h1 {
+  font-size: 72px;
+  line-height: 0.85;
+  padding-top: 60px;
+  position: relative;
+}
+
+.header h1:before {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  margin-left: -70px;
+  width: 140px;
+  height: 1px;
+  content: "";
+  background: #043f8b;
+}
+
+.header p {
+  font-family: "OfficinaSansStd", Arial, sans-serif;
+  color: #2d2d2d;
+  -webkit-font-smoothing: antialiased;
+}
+
+.header p.description {
+  font-family: "UniversLTStd", Arial, sans-serif;
+  font-size: 32px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.header .button {
+  position: relative;
+  display: inline-block;
+  width: 220px;
+  padding: 16px 40px;
+  border: 2px solid #043f8b;
+  border-radius: 50px;
+  font-size: 24px;
+  font-family: "UniversLTStd", Arial, sans-serif;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #043f8b;
 }
