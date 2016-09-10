@@ -45,7 +45,6 @@ body {
   color: #2d2d2d;
   animation-name: slideRight;
   animation-duration: .7s;
-  animation-delay: 1s;
 }
 
 @keyframes slideRight {
