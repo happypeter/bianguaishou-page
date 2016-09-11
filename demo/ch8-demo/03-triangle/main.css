@@ -399,7 +399,7 @@ footer .list li {
   display: inline-block;
   vertical-align: middle;
 }
-footer .list li>a, footer .list li>span{
+footer .list li>a, .footer-span{
   padding: 0;
   color: #fff;
   text-decoration: none;
