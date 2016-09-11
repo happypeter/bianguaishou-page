@@ -335,14 +335,90 @@ p {
 
 footer {
   background-color: #043f8b;
-  height: 200px;
+  font-family: "OfficinaSansStd", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
   padding: 0 0 60px;
   text-align: center;
 }
 
+
+
+.contact-cta {
+  position: relative;
+  overflow: hidden;
+  padding-top: 90px;
+}
+
 footer .contact-cta:before {
-  background: url(./img/sprite.svg);
-  content: "";
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  background: url("./img/sprite.svg") -10px -183px no-repeat;
   width: 980px;
-  height: 27px;
+  height: 27px;;
+  transform: translateX(-50%);
+  content: "";
+}
+
+.contact-cta h2 {
+  font-size: 80px;
+  color: white;
+  margin-bottom: 65px;
+}
+
+footer .list {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+footer .list li {
+  margin: 0;
+  text-align: left;
+  width: 100%;
+  font-size: 22px;
+  padding: 10px 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+footer .list li>a, footer .list li>span{
+  padding: 0;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+
+footer .contact-cta ul li>a:before, footer .contact-cta ul li>span:before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background: url("./img/sprite2.svg") 0px 0px no-repeat;
+  display: inline-block;
+  vertical-align: -20px;
+  margin-right: 20px;
+  backface-visibility: hidden;
+  transition-property: transform, opacity;
+  transition-duration: 0.7s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+footer .contact-cta ul li.email a:before {
+  background-position: 0px -340px;
+}
+
+footer .contact-cta ul li.tel span:before {
+  background-position: -61px -340px;
+}
+
+footer .contact-cta ul li.message a:before {
+  background-position: -123px -340px;
 }
