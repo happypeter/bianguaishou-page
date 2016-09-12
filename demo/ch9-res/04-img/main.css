@@ -90,12 +90,21 @@ p {
   background-repeat: no-repeat;
 }
 
+.banner-img img {
+  display: none;
+}
+
 @media (min-width: 767px) {
   .banner:before {
     display: none;
   }
   .banner-img {
     margin-top: 0;
+    height: auto;
+  }
+  .banner-img img {
+    display: block;
+    width: 100%;
   }
 }
 
@@ -119,6 +128,13 @@ p {
     margin-left: 40px;
   }
 }
+
+@media (min-width: 1117px) {
+  .banner .content {
+    margin-left: 140px;
+  }
+}
+
 
 @keyframes slideRight {
   from {
