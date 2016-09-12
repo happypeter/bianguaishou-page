@@ -90,6 +90,15 @@ p {
   background-repeat: no-repeat;
 }
 
+@media (min-width: 767px) {
+  .banner:before {
+    display: none;
+  }
+  .banner-img {
+    margin-top: 0;
+  }
+}
+
 .banner .content {
   text-align: center;
   position: absolute;
@@ -101,6 +110,14 @@ p {
   color: #2d2d2d;
   animation-name: slideRight;
   animation-duration: .7s;
+}
+
+@media (min-width: 767px) {
+  .banner .content {
+    width: 270px;
+    text-align: left;
+    margin-left: 40px;
+  }
 }
 
 @keyframes slideRight {
@@ -137,7 +154,7 @@ p {
   padding-bottom: 25px;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 567px) {
   .banner p.title {
     font-size: 100px;
   }
@@ -154,6 +171,16 @@ p {
   bottom: 0;
   left: 50%;
   margin-left: -47px;
+}
+
+@media (min-width: 767px) {
+  .banner p.title {
+    line-height: 79px;
+  }
+  .banner p.title:after {
+    left: 0;
+    margin-left: 0;
+  }
 }
 
 
