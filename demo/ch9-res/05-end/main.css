@@ -3,6 +3,7 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
 }
@@ -99,7 +100,7 @@ p {
     display: none;
   }
   .banner-img {
-    margin-top: 0;
+    margin: 0 -200px;
     height: auto;
   }
   .banner-img img {
@@ -133,6 +134,10 @@ p {
   .banner .content {
     margin-left: 140px;
   }
+  .banner-img {
+    margin: 0;
+    height: auto;
+  }
 }
 
 
@@ -156,7 +161,7 @@ p {
   display: inline-block;
 }
 
-.banner p {
+.banner .content p {
   font-size: 24px;
   line-height: 28px;
   margin: 0;
@@ -209,6 +214,22 @@ p {
   padding: 70px 20px 90px;
 }
 
+@media (min-width: 567px) {
+  .header {
+    width: 568px;
+  }
+}
+
+@media (min-width: 767px) {
+  .header {
+    width: 768px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 .header h1 {
   font-size: 72px;
   line-height: 0.85;
@@ -254,6 +275,12 @@ p {
   width: 80%;
   display: block;
   margin: 0 auto;
+}
+
+@media (min-width: 767px) {
+  .divider {
+    display: none;
+  }
 }
 
 .challenges {
