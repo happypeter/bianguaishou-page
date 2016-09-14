@@ -28,6 +28,13 @@ h4 {
 p {
   margin: 30px auto;
   line-height: 28px;
+  font-size: 18px;
+}
+
+@media (min-width: 567px) {
+  p {
+    font-size: 20px;
+  }
 }
 
 .container {
@@ -36,10 +43,29 @@ p {
   padding: 0 20px;
 }
 
+@media (min-width: 567px) {
+  .container {
+    width: 568px;
+  }
+}
+
+@media (min-width: 767px) {
+  .container {
+    width: 728px;
+  }
+}
+
+@media (min-width: 1117px) {
+  .container {
+    width: 100%;
+    max-width: 1020px;
+  }
+}
+
 .button {
   position: relative;
   display: inline-block;
-  width: 220px;
+  width: auto;
   padding: 16px 40px;
   border: 2px solid #043f8b;
   border-radius: 50px;
@@ -286,12 +312,19 @@ p {
 .challenges {
   padding: 70px 0;
 }
+
 .challenges-inner {
     position: relative;
     z-index: 3;
     padding: 0 40px;
     margin: 0 auto;
     max-width: 1180px;
+}
+
+.challenges-inner:after {
+  display: table;
+  content: "";
+  clear: both;
 }
 
 .challenges-title {
@@ -307,8 +340,24 @@ p {
   padding-top: 50px;
 }
 
+.challenges-col.left {
+  text-align: center;
+}
+
+@media (min-width: 767px) {
+  .challenges-col.left {
+    float: left;
+    width: 50%;
+    padding-right: 40px;
+  }
+  .challenges-col.right {
+    float: right;
+    width: 50%;
+  }
+}
+
 .challenges-col img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .challenges-sub {
@@ -374,12 +423,44 @@ p {
   float: right;
 }
 
+
 .solution-content {
   clear: both;
   max-width: 100%;
   text-align: center;
   padding: 30px;
 }
+
+@media (min-width: 890px) {
+  .solution-image {
+    max-width: 50%;
+  }
+  .solution-content.scoping {
+    max-width: 50%;
+    clear: none;
+    padding-top: 135px;
+    padding-bottom: 75px;
+  }
+  .solution-content.teacher {
+    clear: right;
+    padding-right: 30px;
+    padding-left: calc(50% + 40px);
+    padding-top: 170px;
+  }
+  .solution-content.ipad {
+    padding-left: 30px;
+    padding-right: 30px;
+    clear: left;
+    max-width: 50%;
+    padding: 70px 0 80px calc(50% - 500px);
+  }
+  .solution-image.ipad {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
 
 .solution-standout {
   font-size: 48px;
@@ -418,8 +499,25 @@ p {
   top: 15px;
   bottom: 20px;
   border: 2px solid #043f8b;
+  box-sizing: content-box;
 }
 
+@media (min-width: 567px) {
+  .laptop-screen {
+    left: 70px;
+    right: 70px;
+    top: 30px;
+    bottom: 40px;
+  }
+}
+@media (min-width: 767px) {
+  .laptop-screen {
+    left: 100px;
+    right: 100px;
+    top: 40px;
+    bottom: 50px;
+  }
+}
 .button.cta-first {
   margin-bottom: 20px;
 }
@@ -475,6 +573,13 @@ footer .list li {
   padding: 10px 0;
   display: inline-block;
   vertical-align: middle;
+}
+
+
+@media (min-width: 1117px) {
+  footer .list li {
+    width: auto;
+  }
 }
 footer .list li>a, .footer-tel{
   padding: 0;
