@@ -436,10 +436,12 @@ p {
     max-width: 50%;
   }
   .solution-content.scoping {
-    max-width: 50%;
+    max-width: 440px;
+    box-sizing: content-box;
     clear: none;
-    padding-top: 135px;
+    padding-top: 200px;
     padding-bottom: 75px;
+    padding-left: calc(50% - 500px);
   }
   .solution-content.teacher {
     clear: right;
@@ -451,7 +453,8 @@ p {
     padding-left: 30px;
     padding-right: 30px;
     clear: left;
-    max-width: 50%;
+    max-width: 440px;
+    box-sizing: content-box;
     padding: 70px 0 80px calc(50% - 500px);
   }
   .solution-image.ipad {
@@ -516,6 +519,15 @@ p {
     right: 100px;
     top: 40px;
     bottom: 50px;
+  }
+}
+
+@media (min-width: 1117px) {
+  .laptop-screen {
+    top: 70px;
+    right: 155px;
+    bottom: 90px;
+    left: 155px;
   }
 }
 .button.cta-first {
